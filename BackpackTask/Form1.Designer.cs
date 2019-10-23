@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.solveButton = new System.Windows.Forms.Button();
             this.weightTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,6 +37,12 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.itemsListView = new System.Windows.Forms.ListView();
+            this.textBoxResult = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBoxStart = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // solveButton
@@ -69,9 +76,9 @@
             // ShowConditionsButton
             // 
             this.ShowConditionsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.ShowConditionsButton.Location = new System.Drawing.Point(526, 266);
+            this.ShowConditionsButton.Location = new System.Drawing.Point(489, 98);
             this.ShowConditionsButton.Name = "ShowConditionsButton";
-            this.ShowConditionsButton.Size = new System.Drawing.Size(185, 25);
+            this.ShowConditionsButton.Size = new System.Drawing.Size(173, 28);
             this.ShowConditionsButton.TabIndex = 4;
             this.ShowConditionsButton.Text = "Показать исходные данные";
             this.ShowConditionsButton.UseVisualStyleBackColor = true;
@@ -106,11 +113,67 @@
             this.itemsListView.UseCompatibleStateImageBehavior = false;
             this.itemsListView.View = System.Windows.Forms.View.Details;
             // 
+            // textBoxResult
+            // 
+            this.textBoxResult.Enabled = false;
+            this.textBoxResult.Location = new System.Drawing.Point(461, 170);
+            this.textBoxResult.Name = "textBoxResult";
+            this.textBoxResult.Size = new System.Drawing.Size(215, 24);
+            this.textBoxResult.TabIndex = 5;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(428, 221);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(69, 31);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "n^2";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(522, 221);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(80, 30);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "n*log*n";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(620, 222);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(71, 29);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "n";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // textBoxStart
+            // 
+            this.textBoxStart.Enabled = false;
+            this.textBoxStart.Location = new System.Drawing.Point(461, 140);
+            this.textBoxStart.Name = "textBoxStart";
+            this.textBoxStart.Size = new System.Drawing.Size(215, 24);
+            this.textBoxStart.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(724, 303);
+            this.Controls.Add(this.textBoxStart);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBoxResult);
             this.Controls.Add(this.ShowConditionsButton);
             this.Controls.Add(this.itemsListView);
             this.Controls.Add(this.label1);
@@ -135,6 +198,12 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ListView itemsListView;
+        private System.Windows.Forms.TextBox textBoxResult;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBoxStart;
     }
 }
 
